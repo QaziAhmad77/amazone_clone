@@ -1,5 +1,7 @@
 const SideNavContent = () => {
-  return <div></div>;
+  return <div>
+    
+  </div>;
 };
 
 export default SideNavContent;
