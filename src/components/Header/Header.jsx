@@ -10,7 +10,7 @@ import HeaderBottom from './HeaderBottom';
 const Header = () => {
   const [showAll, setShowAll] = useState(false);
   return (
-    <div>
+    <div className='w-full'>
       <div className="w-full flex items-center gap-4 bg-amazon_blue text-white px-4 py-3">
         {/* Image Start here */}
         <div className="headerHover">
