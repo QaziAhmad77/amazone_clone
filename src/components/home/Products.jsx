@@ -26,22 +26,40 @@ const Products = () => {
           <span className="text-xs capitalize italic absolute top-2 right-2 text-gray-500">
             {item.category}
           </span>
-          <div className="w-full h-auto flex items-center justify-center relative">
+          <div className="w-full h-auto flex items-center justify-center relative group">
             <img
               className="w-52 h-64 object-contain"
               src={item.image}
               alt="ProductImg"
             />
-            <ul className="w-full h-36 bg-gray-100 absolute bottom-0 flex flex-col items-end justify-center gap-2 font-titleFont px-2 border-l border-r">
-              <li>
+            <ul className="w-full h-36 bg-gray-100 absolute -bottom-[170px] group-hover:bottom-0 duration-700 flex flex-col items-end justify-center gap-2 font-titleFont px-2 border-l border-r">
+              <li className="productLi">
                 Compare{' '}
                 <span>
                   <ApiIcon />{' '}
                 </span>
               </li>
+              <li className="productLi">
+                Add to Cart{' '}
+                <span>
+                  <ShoppinCartIcon />{' '}
+                </span>
+              </li>
+              <li className="productLi">
+                View Details{' '}
+                <span>
+                  <ArrowCircleRightIcon />{' '}
+                </span>
+              </li>
+              <li className="productLi">
+                Add to Wish List{' '}
+                <span>
+                  <FavoriteIcon />{' '}
+                </span>
+              </li>
             </ul>
           </div>
-          <div className="px-4">
+          <div className="px-4 z-10 bg-white">
             <div className="flex items-center justify-between">
               <h2 className="font-titleFont tracking-wide text-lg text-amazon_blue font-medium">
                 {item.title.substring(0, 20)}

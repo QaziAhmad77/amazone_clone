@@ -18,7 +18,7 @@ const Header = () => {
         </div>
         {/* Image End here */}
         {/* Deliver Start here */}
-        <div className="headerHover">
+        <div className="headerHover hidden mdl:inline-flex">
           <LocationOnIcon />
           <p className="text-sm text-lightText font-light flex flex-col">
             Deliver to{' '}
@@ -27,7 +27,7 @@ const Header = () => {
         </div>
         {/* Deliver End here */}
         {/* Search Start here */}
-        <div className="h-10 rounded-md flex flex-grow relative">
+        <div className="h-10 rounded-md hidden  lgl:flex flex-grow relative">
           <span
             onClick={() => setShowAll(!showAll)}
             className="bg-gray-200 w-14 h-full hover:bg-gray-300 border-2 cursor-pointer duration-300 text-sm text-amazon_blue font-titleFont flex items-center justify-center rounded-tl-md rounded-bl-md"
@@ -60,8 +60,10 @@ const Header = () => {
         {/* Search End here */}
         {/* Signin Start here */}
         <div className="flex flex-col items-start justify-center headerHover">
-          <p className="text-xs text-lightText font-light">Hello, sign in</p>
-          <p className="text-sm font-semibold -mt-1 text-whiteText">
+          <p className="text-sm mdl:text-xs text-white mdl:text-lightText font-light">
+            Hello, sign in
+          </p>
+          <p className="text-sm font-semibold -mt-1 text-whiteText hidden mdl:inline-flex">
             Accounts & Lists{' '}
             <span>
               <ArrowDropDownIcon />
@@ -70,7 +72,7 @@ const Header = () => {
         </div>
         {/* Signin End here */}
         {/* Orders Start here */}
-        <div className="flex flex-col items-start justify-center headerHover">
+        <div className="hidden lgl:flex flex-col items-start justify-center headerHover">
           <p className="text-xs text-lightText font-light">Returns</p>
           <p className="text-sm font-semibold -mt-1 text-whiteText">& Orders</p>
         </div>

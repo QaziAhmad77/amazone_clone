@@ -3,9 +3,11 @@ import Products from '../components/home/Products';
 
 const Home = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Banner />
-      <Products />
+      <div className="w-full -mt-36 py-10">
+        <Products />
+      </div>
     </div>
   );
 };
