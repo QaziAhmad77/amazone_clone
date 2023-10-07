@@ -24,8 +24,9 @@ const Banner = () => {
       <div // whole card
         style={{
           position: 'absolute',
-          top: '70%',
-          left: '45%',
+          top: '68%',
+          left: '50%',
+          margin: '0 auto',
           width: '210px',
           transform: 'translate(-50%,-50%)',
           borderRadius: '10px',
@@ -39,7 +40,7 @@ const Banner = () => {
             alignItems: 'center',
             justifyContent: 'center',
             position: 'relative',
-            top: '35px',
+            top: '20px',
           }}
         >
           {' '}

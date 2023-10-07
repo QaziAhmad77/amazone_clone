@@ -6,6 +6,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { useState } from 'react';
 import { liItems } from '../../constants';
 import HeaderBottom from './HeaderBottom';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [showAll, setShowAll] = useState(false);
@@ -59,17 +60,19 @@ const Header = () => {
         </div>
         {/* Search End here */}
         {/* Signin Start here */}
-        <div className="flex flex-col items-start justify-center headerHover">
-          <p className="text-sm mdl:text-xs text-white mdl:text-lightText font-light">
-            Hello, sign in
-          </p>
-          <p className="text-sm font-semibold -mt-1 text-whiteText hidden mdl:inline-flex">
-            Accounts & Lists{' '}
-            <span>
-              <ArrowDropDownIcon />
-            </span>
-          </p>
-        </div>
+        <Link to="/signin">
+          <div className="flex flex-col items-start justify-center headerHover">
+            <p className="text-sm mdl:text-xs text-white mdl:text-lightText font-light">
+              Hello, sign in
+            </p>
+            <p className="text-sm font-semibold -mt-1 text-whiteText hidden mdl:inline-flex">
+              Accounts & Lists{' '}
+              <span>
+                <ArrowDropDownIcon />
+              </span>
+            </p>
+          </div>
+        </Link>
         {/* Signin End here */}
         {/* Orders Start here */}
         <div className="hidden lgl:flex flex-col items-start justify-center headerHover">

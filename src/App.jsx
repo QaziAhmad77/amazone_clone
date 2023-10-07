@@ -8,6 +8,7 @@ import {
 import RootLayout from './components/layout/RootLayout';
 import Home from './pages/Home';
 import { productsData } from './api/api';
+import Signin from './pages/Signin';
 
 // const Rootlayout=()=>{
 //   return (
@@ -25,6 +26,7 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} loader={productsData}></Route>
+        <Route path="/signin" element={<Signin />}></Route>
       </Route>
     )
   );
