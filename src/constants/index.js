@@ -180,3 +180,92 @@ export const middleList = [
     ],
   },
 ];
+
+export const footerBottomItem = [
+  {
+    _id: 1016,
+    title: 'ComiXology',
+    des: 'Thousand of Digital Comics',
+  },
+  {
+    _id: 1017,
+    title: 'DPReview',
+    des: 'Thousand of Digital Comics',
+  },
+  {
+    _id: 1018,
+    title: 'Fabric',
+    des: 'Sewing, Qualiting & Knitting',
+  },
+  {
+    _id: 1019,
+    title: 'Goodreads',
+    des: 'Book reviews & recommendations',
+  },
+
+  {
+    _id: 1020,
+    title: 'IMDb',
+    des: 'Movies, TB & Celebrations',
+  },
+  {
+    _id: 1021,
+    title: 'IMDBPro',
+    des: 'Get Info Entertainment Professionals Need',
+  },
+  {
+    _id: 1022,
+    title: 'Kindle Direct Publishing',
+    des: 'Indie Digital & Print Publishing Made Easy',
+  },
+  {
+    _id: 1023,
+    title: 'Prime Video Direct',
+    des: 'Video Distribution Made Easy',
+  },
+  {
+    _id: 1024,
+    title: 'Shopbop',
+    des: 'Designer Fashion Brands',
+  },
+  {
+    _id: 1025,
+    title: 'Woot!',
+    des: 'Deals and Shenanigans',
+  },
+  {
+    _id: 1026,
+    title: 'Zappos',
+    des: 'Shoes & Clothing',
+  },
+  {
+    _id: 1027,
+    title: 'Ring',
+    des: 'Smart Home Security Systems',
+  },
+  {
+    _id: 1028,
+    title: 'eero WiFi',
+    des: 'Stream 4K Video in Every Room',
+  },
+  {
+    _id: 1029,
+    title: 'Blink',
+    des: 'Smart Security for Every Home',
+  },
+  {
+    _id: 1030,
+    title: 'Neighbors App',
+    des: 'Real-Time Crime & Safety Alerts',
+  },
+  {
+    _id: 1031,
+    title: 'Amazon Subscription Boxes',
+    des: 'Top subscription boxes - right to your doo',
+  },
+  {
+    _id: 1032,
+    title: 'PillPack',
+    des: 'Pharmacy Simplified',
+  },
+];

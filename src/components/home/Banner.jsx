@@ -5,7 +5,7 @@ import {
   bannerImgOne,
   bannerImgThree,
   bannerImgTwo,
-} from '../../../assets';
+} from '../../assets';
 import { useState } from 'react';
 const Banner = () => {
   const [dotActive, setDocActive] = useState(0);

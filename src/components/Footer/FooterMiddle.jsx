@@ -1,4 +1,4 @@
-import { bdFlag, logo } from '../../assets';
+import {  logo, pkFlag } from '../../assets';
 import { middleList } from '../../constants';
 import FooterMiddleList from './FooterMiddleList';
 
@@ -31,8 +31,8 @@ const FooterMiddle = () => {
           </p>
         </div>
         <div className="flex gap-1 items-center justify-center border border-gray-500 hover:border-amazon_yellow cursor-pointer duration-200 px-2 py-1">
-          <img src={bdFlag} alt="" />
-          <p>Bangladesh</p>
+          <img className='w-6' src={pkFlag} alt="" />
+          <p>Pakistan</p>
         </div>
       </div>
       {/* Bottom End her */}
