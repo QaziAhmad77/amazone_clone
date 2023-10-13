@@ -4,10 +4,12 @@ import ApiIcon from '@mui/icons-material/Api';
 import ShoppinCartIcon from '@mui/icons-material/ShoppingCart';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../../redux/amazonSlice';
 
 const Products = () => {
+  const dispatch = useDispatch();
   const data = useLoaderData();
-  console.log(data.data);
   const productData = data.data;
   //   useEffect(() => {
   //     async function ProductsData() {
@@ -80,7 +82,22 @@ const Products = () => {
                 <StarIcon />
               </div>
             </div>
-            <button className="w-full font-titleFont font-medium text-base bg-gradient-to-tr from-yellow-400 to-yellow-200 border hover:from-yellow-300 hover:to-yellow-100 border-yellow-500 hover:border-yellow-700 active:bg-gradient-to-bl active:from-yellow-400 active:to-yellow-500 duration-200 py-1.5 rounded-md mt-3">
+            <button
+              onClick={() =>
+                dispatch(
+                  addToCart({
+                    id: item.id,
+                    title: item.title,
+                    description: item.description,
+                    price: item.price,
+                    category: item.category,
+                    image: item.image,
+                    quantity: 1,
+                  })
+                )
+              }
+              className="w-full font-titleFont font-medium text-base bg-gradient-to-tr from-yellow-400 to-yellow-200 border hover:from-yellow-300 hover:to-yellow-100 border-yellow-500 hover:border-yellow-700 active:bg-gradient-to-bl active:from-yellow-400 active:to-yellow-500 duration-200 py-1.5 rounded-md mt-3"
+            >
               Add to Cart
             </button>
           </div>

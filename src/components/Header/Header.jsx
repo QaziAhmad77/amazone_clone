@@ -7,9 +7,12 @@ import { useState } from 'react';
 import { liItems } from '../../constants';
 import HeaderBottom from './HeaderBottom';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
   const [showAll, setShowAll] = useState(false);
+  const products = useSelector((state) => state?.amazoneReducer?.products);
+  console.log(products);
   return (
     <div className="w-full sticky top-0 z-50">
       <div className="w-full flex items-center gap-4 bg-amazon_blue text-white px-4 py-3">
@@ -86,7 +89,7 @@ const Header = () => {
           <p className="text-xs font-semibold mt-3 text-whiteText">
             Cart{' '}
             <span className="absolute text-xs -top-1 left-6 font-semibold p-1 h-4 bg-[#f3a847] text-amazon_blue rounded-full felx justify-center items-center">
-              0
+              {products?.length > 0 ? products.length : 0}
             </span>
           </p>
         </div>
