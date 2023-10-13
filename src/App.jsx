@@ -9,6 +9,7 @@ import RootLayout from './components/layout/RootLayout';
 import Home from './pages/Home';
 import { productsData } from './api/api';
 import Signin from './pages/Signin';
+import Cart from './pages/Cart';
 
 // const Rootlayout=()=>{
 //   return (
@@ -26,6 +27,7 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} loader={productsData}></Route>
+        <Route path="/cart" element={<Cart />}></Route>
         <Route path="/signin" element={<Signin />}></Route>
       </Route>
     )

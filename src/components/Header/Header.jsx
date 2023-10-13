@@ -17,9 +17,11 @@ const Header = () => {
     <div className="w-full sticky top-0 z-50">
       <div className="w-full flex items-center gap-4 bg-amazon_blue text-white px-4 py-3">
         {/* Image Start here */}
-        <div className="headerHover">
-          <img className="w-24 mt-2" src={logo} alt="logo" />
-        </div>
+        <Link to="/">
+          <div className="headerHover">
+            <img className="w-24 mt-2" src={logo} alt="logo" />
+          </div>
+        </Link>
         {/* Image End here */}
         {/* Deliver Start here */}
         <div className="headerHover hidden mdl:inline-flex">
@@ -84,15 +86,17 @@ const Header = () => {
         </div>
         {/* Orders End here */}
         {/* Cart Start here */}
-        <div className="flex items-start justify-center headerHover relative">
-          <ShoppingCartIcon />
-          <p className="text-xs font-semibold mt-3 text-whiteText">
-            Cart{' '}
-            <span className="absolute text-xs -top-1 left-6 font-semibold p-1 h-4 bg-[#f3a847] text-amazon_blue rounded-full felx justify-center items-center">
-              {products?.length > 0 ? products.length : 0}
-            </span>
-          </p>
-        </div>
+        <Link to="/cart">
+          <div className="flex items-start justify-center headerHover relative">
+            <ShoppingCartIcon />
+            <p className="text-xs font-semibold mt-3 text-whiteText">
+              Cart{' '}
+              <span className="absolute text-xs -top-1 left-6 font-semibold p-1 h-4 bg-[#f3a847] text-amazon_blue rounded-full felx justify-center items-center">
+                {products?.length > 0 ? products.length : 0}
+              </span>
+            </p>
+          </div>
+        </Link>
         {/* Cart End here */}
       </div>
       <HeaderBottom />
